@@ -1,0 +1,43 @@
+{
+  "name": "saas-genie",
+  "version": "1.0.0",
+  "description": "SaaS Genie - Trend-Based Idea Generator that identifies trending topics and generates innovative SaaS business ideas",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:realtime": "node dist/index.js realtime",
+    "start:analyze": "node dist/index.js analyze",
+    "start:scheduler": "node dist/index.js scheduler",
+    "dev": "tsc && node dist/index.js",
+    "dev:realtime": "tsc && node dist/index.js realtime",
+    "dev:analyze": "tsc && node dist/index.js analyze",
+    "dev:scheduler": "tsc && node dist/index.js scheduler",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "saas",
+    "trends",
+    "ai",
+    "startup",
+    "ideas",
+    "google-trends",
+    "openai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.3.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@shaivpidadi/trends-js": "^0.0.0-beta.7",
+    "@types/node-cron": "^3.0.11",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^4.2.1",
+    "openai": "^4.28.0"
+  }
+}
