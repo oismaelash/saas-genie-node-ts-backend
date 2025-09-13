@@ -74,12 +74,16 @@ npm install
 Create a `.env` file with the following variables:
 ```env
 OPENAI_API_KEY=your_openai_key
-FOREM_API_KEY=your_dev_to_key
-PUBLISH_ARTICLE=true
-MAX_IDEAS=5
 OPENAI_MODEL=gpt-4o-mini
-GEO=US
-LANG=en
+FOREM_API_KEY=your_dev_to_key
+FOREM_BASE_URL=https://dev.to/api
+PUBLISH_ARTICLE=false
+MAX_IDEAS=5
+GEO=BR
+LANG=pt
+SCHEDULER_ENABLED=true
+SCHEDULER_CRON=0 9 * * *
+SCHEDULER_TIMEZONE=America/Sao_Paulo
 ```
 
 ### Execution
